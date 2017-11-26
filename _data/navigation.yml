@@ -1,16 +1,12 @@
 - title: Hem
   url: /
 
-- title: Något annat
-  url: /om
-
 - title: Teknik
   url: /teknik/
   sublinks:
     - title: FFmpeg
-      url: /teknik/ffmpeg
+      url: /teknik/ffmpeg/
     - title: svtplay-dl
-      url: /teknik/svtplay-dl
+      url: /teknik/svtplay-dl/
     - title: git
-      url: /teknik/git
-      
+      url: /teknik/git/
