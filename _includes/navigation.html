@@ -31,7 +31,7 @@
             <a class="nav-link dropdown-toggle" href="{{ site.baseurl }}{{ entry.url }}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ entry.title }}</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 {% for sublink in sublinks %}
-                <a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
+                <a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
                 {% endfor %}
             </div>
         </li>
