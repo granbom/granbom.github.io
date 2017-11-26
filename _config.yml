@@ -2,7 +2,7 @@ theme: minima
 title: Granbom
 description: Lite av varje om teknik på Svenska
 markdown: kramdown
+highlighter: rouge
+permalink: pretty
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+version: 0.1.0
