@@ -1,7 +1,8 @@
 ---
-Title: ffmpeg
-Description: En sida om ffmpeg
-Author: PG Granbom
+layout: default
+title: ffmpeg
+description: En sida om ffmpeg
+author: PG Granbom
 ---
 
 ## ffmpeg
@@ -21,10 +22,8 @@ Följande måste vara installerat innan kompileringen
 sudo apt install autoconf automake build-essential cmake git libass-dev libfreetype6-dev libsdl2-dev libtheora-dev libtool libva-dev libvdpau-dev libvorbis-dev libxcb1-dev libxcb-shm0-dev libxcb-xfixes0-dev mercurial pkg-config texinfo wget zlib1g-dev
 sudo apt install yasm libx264-dev libx265-dev libvpx-dev libfdk-aac-dev libmp3lame-dev libopus-dev librtmp-dev libxvidcore-dev ocl-icd-opencl-dev
 ```
-<div class="alert alert-info" role="alert">
 Om du vill snabba på kompileringen något och har en
 flerkärning processor (vilket de flesta har numera) så skriv <code>export MAKEFLAGS="-j4"</code> innan du börjar kompilera.
-</div>
 
 ### Konvertera
 Konvertera alla *.ts filer i en katalog till .mkv och lägg till undertexter (.srt) till mkv. Kopiera bara streamarna (behåll alltså kvalitén) och sätt språk på ljudstream samt undertexterna.
