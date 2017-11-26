@@ -14,9 +14,11 @@ https://svtplay-dl.se/
 
 ### Installera från source
 ```shell
+
 git clone https://github.com/spaam/svtplay-dl.git
 make
 sudo make install
+
 ```
 
 ### Parametrar
@@ -25,30 +27,40 @@ Nedan är ett urval av de parametrar som man vanligen använder.
 #### -A eller --all-episodes
 Ladda ner alla filer i en serie
 ```shell
+
 svtplay-dl -A https://play.se/url.till.ett.avsnitt
+
 ```
 
 #### -S eller --subtitle
 Ladda ner undertextfil om det finns någon.
 ```shell
+
 svtplay-dl -S https://play.se/url.till.ett.avsnitt
+
 ```
 
 #### --exclude
 Ladda inte ner filer som innehåller något av orden i den kommaseparerade listan
 ```shell
+
 svtplay-dl --exclude=syntolkat,teckentolkat https://play.se/url.till.ett.avsnitt
+
 ```
 
 #### --all-last
 Ladda bara ner de senaste x episoderna. <strong>Måste användas med -A</strong>.
 ```shell
+
 svtplay-dl -A --all-last=5 https://play.se/url.till.ett.avsnitt
+
 ```
 
 #### Kombinera det vanligaste
 ```shell
+
 svtplay-dl -S -A --exclude=syntolkat,teckentolkat https://play.se/url.till.ett.avsnitt
+
 ```
 
 ## Konvertera
@@ -61,13 +73,17 @@ Konvertera alla *.ts filer i en katalog till .mkv och lägg till undertexter (.s
 
 ### Linux och macOS
 ```bash
+
 for file in *.ts; do ffmpeg -i "$file" -i "${file%.ts}".srt -metadata:s:a:0 language=eng -metadata:s:s:0 language=swe -c copy "${file%.ts}".mkv; done
+
 ```
 
 ### Windows
 Skapa en .cmd fil med följande innehåll och kör den i samma katalog som filerna ligger i.
 ```bash
+
 for %%f in (*.ts) do call ffmpeg -i "%%~f" -i "%%~nf.srt" -metadata:s:a:0 language=eng -metadata:s:s:0 language=swe -c copy "%%~nf.mkv"
+
 ```
 
 ### Förklaringar
