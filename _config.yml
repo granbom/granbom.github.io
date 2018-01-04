@@ -3,7 +3,7 @@ description: Lite av varje om teknik på Svenska
 markdown: kramdown
 remote_theme: granbom/jekyll-theme-bootstrap4-navbar-cdn
 
-permalink: pretty
+permalink: /:title/
 lang: sv
 
 plugins:
