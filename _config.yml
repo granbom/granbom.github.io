@@ -4,5 +4,5 @@ markdown: kramdown
 remote_theme: granbom/jekyll-theme-bootstrap4-navbar-cdn
 highlighter: rouge
 permalink: pretty
-
-version: 0.1.1
+lang: sv
+version: 0.1.2
