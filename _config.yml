@@ -1,8 +1,8 @@
-theme: minima
 title: Granbom
 description: Lite av varje om teknik på Svenska
 markdown: kramdown
+remote_theme: granbom/jekyll-theme-bootstrap4-navbar-cdn
 highlighter: rouge
 permalink: pretty
 
-version: 0.1.0
+version: 0.1.1
