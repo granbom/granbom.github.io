@@ -2,7 +2,9 @@ title: Granbom
 description: Lite av varje om teknik på Svenska
 markdown: kramdown
 remote_theme: granbom/jekyll-theme-bootstrap4-navbar-cdn
-highlighter: rouge
+
 permalink: pretty
 lang: sv
 version: 0.1.2
+plugins:
+  - jekyll-sitemap
