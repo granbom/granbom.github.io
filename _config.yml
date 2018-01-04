@@ -8,3 +8,4 @@ lang: sv
 google_analytics: UA-106894529-2
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
