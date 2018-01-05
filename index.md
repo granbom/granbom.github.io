@@ -6,8 +6,6 @@ description: En site om lite av varje
 author: PG Granbom
 ---
 
-## Granbom
----
 Samlar lite av varje om teknik på ett ställe mest för min egen skull. Däremot saknas det mycket dokumentation på Svenska, vilket jag tänker att jag fixar här. Möjligt att jag skriver samma sak på engelska också.
 
 ## Artiklar
