@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 permalink: /
 title: Hem
 description: En site om lite av varje
