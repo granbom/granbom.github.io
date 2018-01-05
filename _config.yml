@@ -9,3 +9,12 @@ google_analytics: UA-106894529-2
 plugins:
   - jekyll-sitemap
   - jekyll-feed
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      author: PG Granbom
+      layout: post
