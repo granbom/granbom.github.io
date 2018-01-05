@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Använda teman på Github pages från Github repo"
 date: 2018-01-04
 categories: github
