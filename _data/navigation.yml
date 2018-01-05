@@ -1,6 +1,7 @@
 - title: Hem
   url: /
-
+- title: Artiklar
+  url: /artiklar/
 - title: Teknik
   url: /teknik/
   sublinks:
