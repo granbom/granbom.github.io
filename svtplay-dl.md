@@ -3,7 +3,6 @@ layout: page
 permalink: /teknik/svtplay-dl/
 title: svtplay-dl
 description: En sida om svtplay-dl
-author: PG Granbom
 ---
 
 # svtplay-dl

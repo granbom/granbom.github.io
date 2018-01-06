@@ -3,7 +3,6 @@ layout: page
 permalink: /teknik/ffmpeg/
 title: ffmpeg
 description: En sida om ffmpeg
-author: PG Granbom
 ---
 
 # ffmpeg

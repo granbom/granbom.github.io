@@ -1,6 +1,5 @@
 title: Granbom
 description: Lite av varje om teknik på Svenska
-markdown: kramdown
 remote_theme: granbom/jekyll-theme-bootstrap4-navbar-cdn
 
 permalink: /:title/
@@ -17,7 +16,14 @@ defaults:
   -
     scope:
       path: ""
-      type: posts
+      type: "posts"
     values:
-      author: PG Granbom
-      layout: post
+      author: "PG Granbom"
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      author: "PG Granbom"
+      layout: "page"
