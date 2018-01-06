@@ -1,12 +1,12 @@
 ---
-layout: default
+layout: page
 permalink: /teknik/git/
 title: git
 description: En sida om git
 author: PG Granbom
 ---
 
-## git
+# git
 ---
 
 ## GitHub/Bitbucket

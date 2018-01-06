@@ -1,16 +1,16 @@
 ---
-layout: default
+layout: page
 permalink: /teknik/ffmpeg/
 title: ffmpeg
 description: En sida om ffmpeg
 author: PG Granbom
 ---
 
-## ffmpeg
+# ffmpeg
 ---
 En applikation för att konvertera strömmar av ljud/bild från olika filtyper.
 
-### Installera från source
+## Installera från source
 
 ```bash
 git clone https://git.ffmpeg.org/ffmpeg.git
@@ -31,16 +31,16 @@ Om du vill snabba på kompileringen något och har en
 flerkärning processor (vilket de flesta har numera) så skriv <code>export MAKEFLAGS="-j4"</code> innan du börjar kompilera.
 </div>
 
-### Konvertera
+## Konvertera
 Konvertera alla *.ts filer i en katalog till .mkv och lägg till undertexter (.srt) till mkv. Kopiera bara streamarna (behåll alltså kvalitén) och sätt språk på ljudstream samt undertexterna.
 
-#### Linux
+### Linux
 
 ```bash
 for file in *.ts; do ffmpeg -i "$file" -i "${file%.ts}".srt -metadata:s:a:0 language=eng -metadata:s:s:0 language=swe -c copy "${file%.ts}".mkv; done
 ```
 
-#### Windows
+### Windows
 Skapa en .cmd fil med följande innehåll och kör den i samma katalog som filerna ligger i.
 
 ```bash

@@ -1,18 +1,18 @@
 ---
-layout: default
+layout: page
 permalink: /teknik/svtplay-dl/
 title: svtplay-dl
 description: En sida om svtplay-dl
 author: PG Granbom
 ---
 
-## svtplay-dl
+# svtplay-dl
 ---
 Ett program för att ladda ner videofiler från olika playtjänster.
 
 https://svtplay-dl.se/
 
-### Installera från source
+## Installera från source
 ```shell
 
 git clone https://github.com/spaam/svtplay-dl.git
@@ -21,10 +21,10 @@ sudo make install
 
 ```
 
-### Parametrar
+## Parametrar
 Nedan är ett urval av de parametrar som man vanligen använder.
 
-#### -A eller --all-episodes
+### -A eller --all-episodes
 Ladda ner alla filer i en serie
 ```shell
 
@@ -32,7 +32,7 @@ svtplay-dl -A https://play.se/url.till.ett.avsnitt
 
 ```
 
-#### -S eller --subtitle
+### -S eller --subtitle
 Ladda ner undertextfil om det finns någon.
 ```shell
 
@@ -40,7 +40,7 @@ svtplay-dl -S https://play.se/url.till.ett.avsnitt
 
 ```
 
-#### --exclude
+### --exclude
 Ladda inte ner filer som innehåller något av orden i den kommaseparerade listan
 ```shell
 
@@ -48,7 +48,7 @@ svtplay-dl --exclude=syntolkat,teckentolkat https://play.se/url.till.ett.avsnitt
 
 ```
 
-#### --all-last
+### --all-last
 Ladda bara ner de senaste x episoderna. <strong>Måste användas med -A</strong>.
 ```shell
 
@@ -56,7 +56,7 @@ svtplay-dl -A --all-last=5 https://play.se/url.till.ett.avsnitt
 
 ```
 
-#### Kombinera det vanligaste
+### Kombinera det vanligaste
 ```shell
 
 svtplay-dl -S -A --exclude=syntolkat,teckentolkat https://play.se/url.till.ett.avsnitt
@@ -86,20 +86,20 @@ for %%f in (*.ts) do call ffmpeg -i "%%~f" -i "%%~nf.srt" -metadata:s:a:0 langua
 
 ```
 
-### Förklaringar
-#### -metadata:s:a:0
+## Förklaringar
+### -metadata:s:a:0
 * s=stream (ström)
 * a=audio (ljud)
 * 0=första streamen
 denna sätter man alltså till language=eng (eller swe eller vilket språk nu ljudet är i)
 
-#### -metadata:s:s:0
+### -metadata:s:s:0
 * s=stream (ström)
 * s=subtitle (undertext)
 * 0=första streamen
 denna sätter man alltså till language=swe (eller eng eller vilket språk nu undertexterna är på)
 
-#### -c copy
+### -c copy
 Att streamarna bara ska kopieras från en behållare (container, alltså filformatet) till en annan, strömmen i sig blir orörd. Behållarna i detta fallet är .ts (Transport Stream, vanligtvis video i h264 och ljud i aac) och .srt (SubRip undertextfil) till .mkv (Matroska)
 Den andra strömmen är .srt (undertexterna), man lägger ihop video och audio strömmarna från .ts filen med undertext strömmen från .srt filen i en ny behållare som i detta fallet är .mkv (eftersom denna behållare/filformat, klarar av dessa tre typer av strömmar.
 mp4 formatet klarar mig vetligen inte av .srt formatet av undertexter, vilket .mkv gör.
