@@ -9,8 +9,9 @@ description: En sida om git
 ---
 
 ## GitHub/Bitbucket
----
+
 ### Fork
+
 Gör du i webbinterfacet. Sedan klonar du din fork till din dator.
 
 ```shell
