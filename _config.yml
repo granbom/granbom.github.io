@@ -6,7 +6,7 @@ permalink: /:title/
 lang: sv
 google_analytics: UA-106894529-2
 navbar: dark
-navbar-bg: dark
+navbar-bg: primary
 navbar-fixed-top: true
 plugins:
   - jekyll-sitemap
