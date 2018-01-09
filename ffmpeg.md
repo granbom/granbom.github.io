@@ -6,7 +6,7 @@ description: En sida om ffmpeg
 ---
 
 # ffmpeg
----
+
 En applikation för att konvertera strömmar av ljud/bild från olika filtyper.
 
 ## Installera från source
@@ -31,6 +31,7 @@ flerkärning processor (vilket de flesta har numera) så skriv <code>export MAKE
 </div>
 
 ## Konvertera
+
 Konvertera alla *.ts filer i en katalog till .mkv och lägg till undertexter (.srt) till mkv. Kopiera bara streamarna (behåll alltså kvalitén) och sätt språk på ljudstream samt undertexterna.
 
 ### Linux
@@ -40,6 +41,7 @@ for file in *.ts; do ffmpeg -i "$file" -i "${file%.ts}".srt -metadata:s:a:0 lang
 ```
 
 ### Windows
+
 Skapa en .cmd fil med följande innehåll och kör den i samma katalog som filerna ligger i.
 
 ```bash
