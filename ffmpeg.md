@@ -5,8 +5,6 @@ title: ffmpeg
 description: En sida om ffmpeg
 ---
 
-# ffmpeg
-
 En applikation för att konvertera strömmar av ljud/bild från olika filtyper.
 
 ## Installera från source

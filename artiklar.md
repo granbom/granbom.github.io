@@ -4,7 +4,6 @@ permalink: /artiklar/
 title: Artiklar
 description: Alla artiklar
 ---
-# Artiklar
 
 <div class="list-group">
 {% for post in site.posts %}
