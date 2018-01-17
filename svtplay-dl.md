@@ -5,7 +5,7 @@ title: svtplay-dl
 description: En sida om svtplay-dl
 ---
 
-Ett program för att ladda ner videofiler från olika playtjänster. Läs mer om det här: [https://svtplay-dl.se/](svtplay-dl.se)
+Ett program för att ladda ner videofiler från olika playtjänster. Läs mer om det här: [svtplay-dl.se](https://svtplay-dl.se)
 
 ## Installera från source
 
