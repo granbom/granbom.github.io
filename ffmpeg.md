@@ -19,7 +19,7 @@ sudo make install
 Följande måste vara installerat innan kompileringen
 
 ```bash
-sudo apt install autoconf automake build-essential cmake git libass-dev libfreetype6-dev libsdl2-dev libssl-dev libtheora-dev libtool libva-dev libvdpau-dev libvorbis-dev libxcb1-dev libxcb-shm0-dev libxcb-xfixes0-dev mercurial pkg-config texinfo wget zlib1g-dev
+sudo apt install autoconf automake build-essential cmake git libass-dev libfreetype6-dev libsdl2-dev libssl-dev libtheora-dev libtool libva-dev libvdpau-dev libvorbis-dev libxcb1-dev libxcb-shm0-dev libxcb-xfixes0-dev pkg-config texinfo wget zlib1g-dev
 sudo apt install yasm libx264-dev libx265-dev libvpx-dev libfdk-aac-dev libmp3lame-dev libopus-dev librtmp-dev libxvidcore-dev ocl-icd-opencl-dev
 ```
 
