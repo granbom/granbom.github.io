@@ -41,6 +41,9 @@ ffmpeg -i input.mp4 -c:v libx265 -preset medium -crf 28 -c:a aac -b:a 128k outpu
 
 ### Two-Pass
 
+Passar bäst om videofilen skall streamas och man vill begränsa till viss bithastighet. "Pass 1" använder ffmpeg till att skapa en loggfil med "tips" om hur videon kan komprimeras.
+Nedan är max bithastighet satt till 2600 vilket motsvarar ungefär 720p utan nämnvärd komprimering.
+
 ```bash
 ffmpeg -y -i input.mp4 -c:v libx265 -b:v 2600k -x265-params pass=1 -c:a aac -b:a 128k -f mp4 /dev/null && \
 ffmpeg -i input.mp4 -c:v libx265 -b:v 2600k -x265-params pass=2 -c:a aac -b:a 128k output.mp4
