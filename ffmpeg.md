@@ -59,6 +59,15 @@ ffmpeg -i input.mp4 -vf scale=-1:720 output.mp4
 ffmpeg -i input.mp4 -vf "scale=-1:ih/2" half_height_output.mp4
 ```
 
+## Offset
+
+Ibland kan exempelvis undertexterna vara ur synk något. Går att ändra i program för .srt etc, men det går att fixa i ffmpeg också enkelt.
+Om exempelvis undertexterna visas 2,4 sekunder för sent, gör att man vill flytta dessa -2,4 sekunder tidigare. Går att justera i VLC när man tittar på det, men det kanske inte är alltid man använder den spelaren, det bästa är få det rätt i filen.
+
+```bash
+ffmpeg -i input.mkv -itsoffset -2.4 -i input.mkv -map 0:v -map 0:a -map 1:s -c copy output.mkv
+```
+
 ## Konvertera
 
 Konvertera alla *.ts filer i en katalog till .mkv och lägg till undertexter (.srt) till mkv. Kopiera bara streamarna (behåll alltså kvalitén) och sätt språk på ljudstream samt undertexterna.
