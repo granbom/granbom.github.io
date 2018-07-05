@@ -25,7 +25,7 @@ sudo apt install yasm libx264-dev libx265-dev libvpx-dev libfdk-aac-dev libmp3la
 
 <div class="alert alert-primary" role="alert">
 Om du vill snabba på kompileringen något och har en
-flerkärning processor (vilket de flesta har numera) så skriv <code>export MAKEFLAGS="-j4"</code> innan du börjar kompilera. Siffran efter `j` är antalet processorkärnor du vill använda.
+flerkärning processor (vilket de flesta har numera) så skriv <code>export MAKEFLAGS="-j4"</code> innan du börjar kompilera. Siffran efter <code>j</code> är antalet processorkärnor du vill använda.
 </div>
 
 ## Exempel x265
