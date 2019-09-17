@@ -2,6 +2,7 @@
 layout: page
 permalink: /teknik/ffmpeg/
 title: ffmpeg
+icon: fas fa-photo-video
 description: En sida om ffmpeg
 ---
 

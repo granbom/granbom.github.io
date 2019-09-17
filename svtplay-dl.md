@@ -2,6 +2,7 @@
 layout: page
 permalink: /teknik/svtplay-dl/
 title: svtplay-dl
+icon: fas fa-play
 description: En sida om svtplay-dl
 ---
 
