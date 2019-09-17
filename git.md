@@ -2,7 +2,7 @@
 layout: page
 permalink: /teknik/git/
 title: git
-icon: fab fa-git-alt
+icon: fas fa-code-branch
 description: En sida om git
 ---
 
