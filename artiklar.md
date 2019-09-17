@@ -2,6 +2,7 @@
 layout: page
 permalink: /artiklar/
 title: Artiklar
+icon: far fa-newspaper
 description: Alla artiklar
 ---
 
