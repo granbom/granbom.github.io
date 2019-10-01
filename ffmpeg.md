@@ -70,6 +70,14 @@ Om exempelvis undertexterna visas 2,4 sekunder för sent, gör att man vill flyt
 ffmpeg -i input.mkv -itsoffset -2.4 -i input.mkv -map 0:v -map 0:a -map 1:s -c copy output.mkv
 ```
 
+## En bild från en film
+
+Gör en jpg bild av en bildruta från en film. Exemplet nedan tar alla mp4 filer i en katalog och gör en jpg från fem sekunder in i videon, för varje fil.
+
+```bash
+for file in *.mp4; do ffmpeg -i "$file" -ss 00:00:05.000 -vframes 1 "${file%.mp4}".jpg; done
+```
+
 ## Konvertera
 
 Konvertera alla *.ts filer i en katalog till .mkv och lägg till undertexter (.srt) till mkv. Kopiera bara streamarna (behåll alltså kvalitén) och sätt språk på ljudstream samt undertexterna.
