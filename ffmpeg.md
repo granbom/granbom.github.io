@@ -13,7 +13,7 @@ En applikation för att konvertera strömmar av ljud/bild från olika filtyper.
 ```bash
 git clone https://git.ffmpeg.org/ffmpeg.git
 make distclean
-./configure --enable-pthreads --enable-version3 --enable-gpl --enable-libass --enable-libfdk-aac --enable-libfreetype --enable-libmp3lame --enable-libopus --enable-librtmp --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libx265 --enable-libxvid --enable-opencl --enable-openssl --enable-nonfree
+./configure --enable-pthreads --enable-version3 --enable-gpl --enable-libass --enable-libfdk-aac --enable-libfreetype --enable-libmp3lame --enable-libopus --enable-librtmp --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libx265 --enable-libxvid --enable-openssl --enable-nonfree
 make
 sudo make install
 ```
@@ -21,8 +21,9 @@ sudo make install
 Följande måste vara installerat innan kompileringen
 
 ```bash
-sudo apt install autoconf automake build-essential cmake git libass-dev libfreetype6-dev libsdl2-dev libssl-dev libtheora-dev libtool libva-dev libvdpau-dev libvorbis-dev libxcb1-dev libxcb-shm0-dev libxcb-xfixes0-dev pkg-config texinfo wget zlib1g-dev
+sudo apt install autoconf automake build-essential cmake git libass-dev libfreetype6-dev libsdl2-dev libssl-dev libtheora-dev libtool libva-dev libvdpau-dev libvorbis-dev libxcb1-dev libxcb-shm0-dev libxcb-xfixes0-dev pkg-config texinfo wget
 sudo apt install yasm libx264-dev libx265-dev libvpx-dev libfdk-aac-dev libmp3lame-dev libopus-dev librtmp-dev libxvidcore-dev ocl-icd-opencl-dev
+sudo apt install meson ninja-build zlib1g-dev libnuma-dev nasm
 ```
 
 <div class="alert alert-primary" role="alert">
@@ -34,8 +35,8 @@ flerkärning processor (vilket de flesta har numera) så skriv <code>export MAKE
 
 ### Constant Rate Factor (CRF)
 
-* crf är default 28, lägre nummer=bättre kvalitet
-* preset, default är medium. Övriga är `ultrafast superfast veryfast faster fast medium slow slower veryslow`
+- crf är default 28, lägre nummer=bättre kvalitet
+- preset, default är medium. Övriga är `ultrafast superfast veryfast faster fast medium slow slower veryslow`
 
 ```bash
 ffmpeg -i input.mp4 -c:v libx265 -preset medium -crf 28 -c:a aac -b:a 128k output.mp4
@@ -80,7 +81,7 @@ for file in *.mp4; do ffmpeg -i "$file" -ss 00:00:05.000 -vframes 1 "${file%.mp4
 
 ## Konvertera
 
-Konvertera alla *.ts filer i en katalog till .mkv och lägg till undertexter (.srt) till mkv. Kopiera bara streamarna (behåll alltså kvalitén) och sätt språk på ljudstream samt undertexterna.
+Konvertera alla \*.ts filer i en katalog till .mkv och lägg till undertexter (.srt) till mkv. Kopiera bara streamarna (behåll alltså kvalitén) och sätt språk på ljudstream samt undertexterna.
 
 ### Linux
 
